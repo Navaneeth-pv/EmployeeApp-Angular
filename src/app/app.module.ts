@@ -11,7 +11,7 @@ import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { LoginComponent } from './login/login.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { RouterModuleComponent } from './router-module/router-module.component';
+
 import { RouterModule, Routes } from '@angular/router';
 
 const myRoute : Routes=[
@@ -61,7 +61,7 @@ const myRoute : Routes=[
     ViewEmployeeComponent,
     LoginComponent,
     NavBarComponent,
-    RouterModuleComponent
+    
   ],
   imports: [
     BrowserModule,
