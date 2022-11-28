@@ -7,11 +7,11 @@
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
                     <label for="" class="form-label">Employee Code</label>
-                    <input type="text" class="form-control">
+                    <input name="employeeCode"[(ngModel)]="employeeCode" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-warning">Edit</button>
+                    <button (click)="readValues()" class="btn btn-warning">Edit</button>
                 </div>
             </div>
         </div>
