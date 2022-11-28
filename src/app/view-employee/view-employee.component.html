@@ -8,60 +8,20 @@
                   <tr>
                     <th scope="col"></th>
                     <th scope="col">Name</th>
-                    <th scope="col">Age</th>
-                    <th scope="col">Experience</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Salary</th>
+                    <th scope="col">Company</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Alvy</td>
-                    <td>24</td>
-                    <td>2</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>36</td>
-                    <td>12</td>
+                  <tr *ngFor = "let i of data">
+                    
+                    <td>{{i.Name}}</td>
+                    <td>{{i.email}}</td>
+                    <td>{{i.company}}</td>
+                    <td>{{i.Salary}}</td>
                   </tr>
                   
-                  <tr>
-                      <th scope="row">1</th>
-                      <td>Arun y</td>
-                      <td>28</td>
-                      <td>5</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jai</td>
-                      <td>36</td>
-                      <td>11</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Ajay</td>
-                      <td>26</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jobn</td>
-                      <td>36</td>
-                      <td>14</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Arjun</td>
-                      <td>24</td>
-                      <td>1</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>vimal</td>
-                      <td>32</td>
-                      <td>7</td>
-                    </tr>
                 </tbody>
               </table>
 

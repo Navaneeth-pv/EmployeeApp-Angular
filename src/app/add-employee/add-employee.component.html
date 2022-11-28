@@ -7,7 +7,7 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Employee Code</label>
-                    <input type="text" class="form-control">
+                    <input name="Name"[(ngModel)]="Name" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Name</label>
@@ -20,7 +20,7 @@
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">Salary</label>
-                    <input type="text" class="form-control">
+                    <input name="salary"[(ngModel)]="salary" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -31,13 +31,13 @@
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">Email</label>
-                    <input type="text" class="form-control">
+                    <input name="email"[(ngModel)]="email" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
-                    <label for="" class="form-label">Company Website</label>
-                    <input type="text" class="form-control">
+                    <label for="" class="form-label">Company</label>
+                    <input name="company"[(ngModel)]="company" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -52,7 +52,7 @@
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-success ">Submit</button>
+                    <button (click)="readValues()" class="btn btn-success ">Submit</button>
                 </div>
             </div>
 
