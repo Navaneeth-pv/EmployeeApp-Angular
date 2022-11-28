@@ -22,6 +22,7 @@ export class LoginComponent {
       alert("invalid credentials")
       
     }
+    console.log(data)
   }
 
 }
